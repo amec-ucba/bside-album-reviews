@@ -56,6 +56,21 @@ The "Listen Next" cards fit as many columns as the screen allows, with no media 
 
 You'll add `css/breakpoints.css` yourself during the video.
 
+## 🧮 Grading
+
+Your album pages are checked at a phone, tablet, and desktop width and compared with the finished screenshots above.
+
+| Criteria                                                                                                   | Points |
+|------------------------------------------------------------------------------------------------------------|-------:|
+| `css/breakpoints.css` exists and is linked on the homepage and all five album pages                        |      2 |
+| **Phone:** the nav is a two-column grid under the logo                                                     |      2 |
+| **Phone:** the review regions are named with `grid-template-areas` and stack in one column                 |      3 |
+| **Listen Next:** the cards use `repeat(auto-fit, minmax(...))` and adjust without a media query            |      2 |
+| **Tablet (48rem):** the nav sits in one row beside the logo                                                |      2 |
+| **Desktop (60rem):** the album art sits beside the title, and the sidebar sits to the right of the review  |      3 |
+| The site is live on GitHub Pages, and the pull request URL is submitted in Canvas                          |      1 |
+| **Total**                                                                                                  | **15** |
+
 ## 📚 Resources
 
 - [MDN: Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)

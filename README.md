@@ -13,7 +13,7 @@ Flexbox, and media queries.
 > [!IMPORTANT]
 > **Start here: [read ASSIGNMENT.md →](.github/ASSIGNMENT.md)**
 
-It explains the exercise and has screenshots of a finished album page on a phone and a desktop. Use them to check
+It explains the exercise, shows a finished album page on a phone and a desktop, and has the grading rubric. Use them to check
 your work as you follow along with the video.
 
 ## ✅ At a Glance
