@@ -1,18 +1,20 @@
-# 💻 Assignment Boilerplate
+# 🎸 B-Side: Responsive Album Reviews
 
-A starting point for assignment and exercise repos. It includes submission instructions, editor and Git configuration,
-and a pull request template so every assignment works the same way.
+B-Side is a fictional music magazine with a homepage and five album reviews. The pages only have a phone layout so far.
+In this exercise, you'll follow along with the companion video to add tablet and desktop layouts with CSS Grid,
+Flexbox, and media queries.
 
 > [!NOTE]
 > `.editorconfig`, `.gitattributes`, `.gitignore`, `.noai`, and the `.github` and `.idea`
 > folders are setup files that keep assignments consistent. Leave them alone.
 
-## 📋 Assignment Requirements
+## 📋 About the Exercise
 
 > [!IMPORTANT]
 > **Start here: [read ASSIGNMENT.md →](.github/ASSIGNMENT.md)**
 
-It has the requirements, grading criteria, and due date. Read it before you start, and check it again before you submit.
+It explains the exercise and has screenshots of a finished album page on a phone and a desktop. Use them to check
+your work as you follow along with the video.
 
 ## ✅ At a Glance
 
@@ -22,17 +24,23 @@ Every assignment follows the same steps. Each guide has screenshots for every st
 |------|----------------------------------------------------------------------------|-----------------------------------------------|
 | 0    | **First assignment only:** install and set up WebStorm                     | [WebStorm Setup](.github/WEBSTORM_SETUP.md)   |
 | 1    | Create your repo from this template, clone it, and make a `develop` branch | [Getting Started](.github/GETTING_STARTED.md) |
-| 2    | Build your page in the root folder                                         | [Where Your Files Go](#-where-your-files-go)  |
+| 2    | Follow along with the video and add your layouts                           | [Where Your Files Go](#-where-your-files-go)  |
 | 3    | Commit and push often, then turn on GitHub Pages                           | [Publishing](.github/PUBLISHING.md)           |
 | 4    | Open a pull request into `main` and submit its URL in Canvas               | [Submitting](.github/SUBMITTING.md)           |
 
 ## 📂 Where Your Files Go
 
-Create your files in the **root folder** of this repo — the same folder as this README.
-GitHub Pages publishes from the root, so `index.html` has to live there or your site will 404. Group your assets into
-subfolders:
+The starter files are already in place. Keep `index.html` in the **root folder** of this repo, the same folder as this
+README. GitHub Pages publishes from the root, so moving it will make your site 404.
 
-<img src=".github/images/webstorm-project-files.png" alt="The WebStorm Project panel showing index.html in the root folder, with css/style.css, images/photo.jpg, and js/script.js in their own subfolders, all highlighted" width="350">
+```text
+├── index.html          Homepage
+├── albums/             One review page per album
+├── css/
+│   ├── base.css        Phone layout (leave this file as it is)
+│   └── breakpoints.css You'll create this one
+└── images/             Album covers
+```
 
 ## 🤖 AI Policy
 

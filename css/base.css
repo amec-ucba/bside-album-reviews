@@ -1,0 +1,380 @@
+/* ==========================================================================
+   B-Side: base.css
+   Colors, fonts, and spacing for every page. Don't edit this file.
+   This is the phone layout: there are no media queries and no page layout,
+   so everything stacks in one column. Your breakpoints go in
+   css/breakpoints.css.
+   ========================================================================== */
+
+/* Page basics
+----------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f1ec;
+  color: #1d1b1b;
+  font-family: "Source Serif 4", Georgia, serif;
+  line-height: 1.65;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Masthead
+----------------------------------------------------------------------------- */
+
+body > header {
+  background-color: #111111;
+  color: #f4f1ec;
+  border-bottom: 4px solid #a3121b;
+}
+
+body > header .container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  display: block;
+  color: #f4f1ec;
+  font-family: "Archivo Black", Impact, sans-serif;
+  font-size: 2.25rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #d4202b;
+}
+
+nav ul {
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.55rem 0.5rem;
+  border: 1px solid #3a3636;
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: #a3121b;
+  border-color: #a3121b;
+}
+
+/* Review: title block and score
+----------------------------------------------------------------------------- */
+
+.review {
+  padding: 1.5rem 0 1rem;
+}
+
+.review > * + * {
+  margin-top: 1.25rem;
+}
+
+.kicker {
+  margin: 0;
+  color: #a3121b;
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.review h1 {
+  margin: 0.25rem 0 0.1rem;
+  font-family: "Bodoni Moda", Didot, serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.artist {
+  margin: 0;
+  font-family: "Bodoni Moda", Didot, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.meta {
+  margin: 0.6rem 0 0;
+  color: #5c5656;
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background-color: #111111;
+  color: #f4f1ec;
+}
+
+.score .number {
+  color: #ffffff;
+  font-family: "Archivo Black", Impact, sans-serif;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.score .label {
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.score .badge {
+  display: block;
+  width: fit-content;
+  margin-top: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #a3121b;
+  color: #ffffff;
+}
+
+/* Review: album art
+----------------------------------------------------------------------------- */
+
+.review > figure {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.review > figure img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background-color: #111111;
+}
+
+/* Review: article
+----------------------------------------------------------------------------- */
+
+.review > div > p {
+  margin: 0 0 1.1rem;
+  font-size: 1.1rem;
+}
+
+.review > div > p:first-child::first-letter {
+  float: left;
+  padding: 0.35rem 0.5rem 0 0;
+  color: #a3121b;
+  font-family: "Bodoni Moda", Didot, serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+blockquote {
+  margin: 1.75rem 0;
+  padding: 1.25rem 0;
+  border-top: 3px solid #1d1b1b;
+  border-bottom: 3px solid #1d1b1b;
+  font-family: "Bodoni Moda", Didot, serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* Review: sidebar
+----------------------------------------------------------------------------- */
+
+.box {
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd5cc;
+}
+
+.box + .box {
+  margin-top: 1.25rem;
+}
+
+.box h2 {
+  margin: 0 0 0.75rem;
+  color: #a3121b;
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+aside dl {
+  margin: 0;
+}
+
+aside dt {
+  color: #5c5656;
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+aside dd {
+  margin: 0 0 0.7rem;
+}
+
+aside ol {
+  margin: 0;
+  padding-left: 1.6rem;
+}
+
+aside li {
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #eee6dd;
+}
+
+aside li.single::after {
+  content: "Single";
+  margin-left: 0.5rem;
+  padding: 0.05rem 0.35rem;
+  background-color: #111111;
+  color: #ffffff;
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+/* Listen Next
+----------------------------------------------------------------------------- */
+
+main > section h2 {
+  margin: 2rem 0 1rem;
+  font-family: "Bodoni Moda", Didot, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card {
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd5cc;
+}
+
+.card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background-color: #111111;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 0.75rem 1rem 1rem;
+}
+
+.card h2,
+.card h3 {
+  margin: 0;
+  font-family: "Bodoni Moda", Didot, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.card a:hover h2,
+.card a:hover h3,
+.card a:focus-visible h2,
+.card a:focus-visible h3 {
+  text-decoration: underline;
+}
+
+.card p {
+  margin: 0.15rem 0 0;
+  color: #5c5656;
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+/* Home: page title and intro
+----------------------------------------------------------------------------- */
+
+main > h1 {
+  margin: 2rem 0 0.25rem;
+  font-family: "Bodoni Moda", Didot, serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+main > h1 + p {
+  margin: 0 0 1.5rem;
+  color: #5c5656;
+  font-size: 1.1rem;
+}
+
+/* Footer
+----------------------------------------------------------------------------- */
+
+body > footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  background-color: #111111;
+  color: #cfc8c8;
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+body > footer p {
+  margin: 0;
+}
