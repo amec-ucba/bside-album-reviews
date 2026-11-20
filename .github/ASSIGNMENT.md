@@ -1,7 +1,5 @@
 # 🎸 B-Side: Responsive Album Reviews
 
-[← Back to the README](../README.md)
-
 ## 🎯 Overview
 
 B-Side is a fictional music magazine with a homepage and five album reviews. The HTML and the base styles are already
@@ -14,7 +12,7 @@ page, and use CSS Grid, Flexbox, and media queries to add layouts for tablets an
 > Follow along with the companion video. It walks through every step, from creating the stylesheet to the finished
 > desktop layout.
 
-## 🧠 What You'll Practice
+### 🧠 What You'll Practice
 
 - Writing mobile-first CSS: the phone layout comes first, and each media query adds to it
 - Naming page regions with `grid-template-areas` and rearranging them at a breakpoint
@@ -22,7 +20,19 @@ page, and use CSS Grid, Flexbox, and media queries to add layouts for tablets an
 - Switching the nav from a grid to a Flexbox row
 - Adding `min-width` media queries in `rem`
 
-## 🖼️ Finished Album Page
+## 📋 Requirements
+
+- [ ] Create `css/breakpoints.css` and link it on the homepage and all five album pages, after `css/base.css`
+- [ ] Leave `css/base.css` as it is. All of your CSS goes in `css/breakpoints.css`.
+- [ ] **Phone:** the nav is a two-column grid under the logo
+- [ ] **Phone:** the review regions are named with `grid-template-areas` and stack in one column
+- [ ] **Listen Next:** the cards use `repeat(auto-fit, minmax(...))` and adjust to the screen without a media query
+- [ ] **Tablet (`48rem` and up):** a `min-width` media query moves the nav into one row beside the logo
+- [ ] **Desktop (`60rem` and up):** a second `min-width` media query puts the album art beside the title and moves the
+  sidebar to the right of the review
+- [ ] Every album page matches the finished screenshots below at phone, tablet and desktop widths
+
+## 🖼️ Example Output
 
 The site uses two breakpoints:
 
@@ -77,6 +87,10 @@ Your album pages are checked at a phone, tablet, and desktop width and compared 
 - [MDN: Grid template areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_areas)
 - [CSS-Tricks: A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+## 🆘 Getting Help
+
+Ask during class or office hours, or post on the Canvas discussion board.
 
 ---
 
