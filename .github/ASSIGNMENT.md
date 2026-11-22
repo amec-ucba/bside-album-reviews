@@ -73,13 +73,13 @@ Your album pages are checked at a phone, tablet, and desktop width and compared 
 | Criteria                                                                                                   | Points |
 |------------------------------------------------------------------------------------------------------------|-------:|
 | `css/breakpoints.css` exists and is linked on the homepage and all five album pages                        |      2 |
-| **Phone:** the nav is a two-column grid under the logo                                                     |      2 |
-| **Phone:** the review regions are named with `grid-template-areas` and stack in one column                 |      3 |
-| **Listen Next:** the cards use `repeat(auto-fit, minmax(...))` and adjust without a media query            |      2 |
+| **Phone:** the nav is a two-column grid under the logo                                                     |      3 |
+| **Phone:** the review regions are named with `grid-template-areas` and stack in one column                 |      4 |
+| **Listen Next:** the cards use `repeat(auto-fit, minmax(...))` and adjust without a media query            |      3 |
 | **Tablet (48rem):** the nav sits in one row beside the logo                                                |      2 |
-| **Desktop (60rem):** the album art sits beside the title, and the sidebar sits to the right of the review  |      3 |
+| **Desktop (60rem):** the album art sits beside the title, and the sidebar sits to the right of the review  |      4 |
 | The site is live on GitHub Pages, and the pull request URL is submitted in Canvas                          |      1 |
-| **Total**                                                                                                  | **15** |
+| **Total**                                                                                                  | **19** |
 
 ## 📚 Resources
 
